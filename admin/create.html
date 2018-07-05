@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="vierport" content="width=device-width, initial-scale=1.0">
+	<title> Admin Panel </title>
+	<link rel="stylesheet" type="text/css" href="../assets/css/header.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/footer.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/materialize.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body id="admin-container">
+  <nav>
+    <div class="nav-wrapper">
+      <h4 class="brand-logo center"> Admin Panel </h4>
+    </div>
+  </nav>
+  <div class="side-menu">
+    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+  </div>
+  <section class="create">
+    <ul id="slide-out" class="sidenav">
+      <li><a class="sidenav-close" href="#!"> Tutup </a></li>
+      <li>
+        <div class="user-view">
+          <div class="img-area center">
+            <img src="../assets/img/ihwan.jpg">
+            <div><a href="profile.html"> Ihwan Mualana </a></div>
+          </div>
+        </div>
+      </li>
+      <li><a href="profile.html"><i class="material-icons">person</i><span class="left"> Profile </span></a></li>
+      <li><a href="index.html"><i class="material-icons">show_chart</i><span class="left"> Grafik Pengunjung </span></a></li>
+      <li><a href="create.html"><i class="material-icons">developer_board</i><span class="left"> Update Project </span></a></li>
+      <li><a href="message.html"><i class="material-icons">mode_comment</i><span class="left"> Lihat Pesan </span></a></li>
+      <li><div class="divider"></div></li>
+      <li><a href="../index.html"><i class="material-icons">pageview</i><span class="left"> Lihat Blog </span></a></li>
+      <li><a href="../index.html"><i class="material-icons">exit_to_app</i><span class="left"> Logout </span></a></li>
+    </ul>
+    <div class="container">
+      <h5> Update Project </h5>
+      <form method="POST">
+        <div class="row">
+          <div class="input-field">
+            
+          </div>
+          <div class="input-field col l12">
+            <input id="judul" type="text" placeholder="">
+            <label for="judul"> Judul Project : </label>
+          </div>
+          <div class="input-field col l12">
+            <label for="tanggal1"> Tanggal Mulai : </label>
+            <input id="tanggal1" type="date" placeholder="">
+          </div>
+          <div class="input-field col l12">
+            <label for="tanggal2"> Tanggal Selesai : </label>
+            <input id="tanggal2" type="date" placeholder="">
+          </div>
+          <div class="input-field col s12">
+            <select>
+              <option value="" selected="" disabled="">  </option>
+              <option value="1"> Pemrograman Web </option>
+              <option value="2"> Pemrograman Desktop </option>
+              <option value="3"> Design Web </option>
+              <option value="4"> Design Grafis </option>
+              <option value="5"> Animasi </option>
+            </select>
+            <label> Jenis Project : </label>
+          </div>
+          <div class="input-field col s12">
+            <label for="deskripsi"> Deskripsi Project : </label>
+            <textarea id="textarea1" class="materialize-textarea" placeholder=""></textarea>
+          </div>
+        </div>
+        <div class="input-field right">
+          <a class="waves-effect waves-light btn-small"><i class="material-icons right">save</i> Simpan </a>
+        </div>
+      </form>
+    </div>
+    </section>
+    
+    <script type="text/javascript" src="../assets/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../assets/js/materialize.js"></script>
+    <script type="text/javascript" src="../assets/js/style.js"></script>
+    <script type="text/javascript" src="../assets/js/logic.js"></script>
+</body>
+</html>
